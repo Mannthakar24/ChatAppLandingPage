@@ -1,0 +1,217 @@
+.navbar {
+    background-color: orange;
+
+    padding: 20px;
+
+
+}
+
+.hero {
+    margin-top: 100px;
+    border-radius: 10px;
+    margin-bottom: 150px;
+    padding-bottom: 100px;
+}
+
+h5 {
+
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    line-height: 50px;
+    padding: 20px;
+}
+
+.hero>img {
+    height: 300px;
+    border-radius: 50px;
+}
+
+
+
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    img {
+        position: absolute;
+        width: 250px;
+
+    }
+
+    .photos2 {
+        width: 230px;
+        height: 300px;
+    }
+}
+
+/* Page 2 */
+
+.text {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+
+}
+
+.text>h1 {
+    font-size: 50px;
+}
+
+.text>p {
+
+    font-size: 20px;
+    text-align: left;
+}
+
+.box-1 {
+
+    margin-top: 250px;
+
+}
+
+.box-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.heroImg {
+
+    position: absolute;
+    top: 200px;
+
+    width: 45%;
+
+}
+
+.cards {
+    margin-top: 250px;
+    margin-bottom: 270px;
+}
+
+
+.card {
+    position: relative;
+    min-height: 350px;
+    min-width: 200px;
+    background: #fff;
+    border: solid 4px rgba(24, 17, 17, 0.776);
+    box-shadow: -5px 5px orange;
+    transition: all .2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card:hover {
+    margin: 10px 10px 0 0;
+    box-shadow: 0px 0px #333;
+}
+
+.card .img-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter .2s 1s ease-in-out;
+}
+
+.card:hover .img-card {
+    filter: blur(1px);
+}
+
+.card .add-cart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 50px);
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 250px;
+    font-weight: bold;
+    font-size: 19px;
+    opacity: 0;
+}
+
+.card:hover .add-cart {
+    opacity: 1;
+    transition: opacity .3s 1s ease-in-out;
+}
+
+.card .info-card {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: solid 1px #333;
+}
+
+.card .info-card h4 {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px;
+    text-align: center;
+
+}
+
+
+@media (max-width: 600px) {
+    .hero {
+        width: 44vh;
+    }
+
+    .heroImg {
+        display: none;
+    }
+
+    h5 {
+
+        font-size: 18px;
+        font-weight: 500;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .text>p {
+        font-size: 20px;
+        text-align: left;
+        line-height: 39px;
+
+    }
+
+    .text>h1 {
+        font-size: 55px;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    img {
+        width: 280px;
+
+    }
+
+    .box-1 {
+        margin-top: 12vh;
+    }
+
+    .card {
+        min-width: 300px;
+        margin: 10px;
+    }
+
+
+
+}
